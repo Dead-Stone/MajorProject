@@ -1,8 +1,7 @@
-# Nutrition AI Mobile Application
-
+# Health Diet Management
 ## Overview
 
-The Nutrition AI Mobile Application is a multi-platform solution designed for food recognition, nutritional analysis, and personalized dietary recommendations. It leverages advanced machine learning models to provide users with accurate and insightful information about their dietary choices.
+This application is a multi-platform solution designed for food recognition, nutritional analysis, and personalized dietary recommendations. It leverages advanced machine learning models to provide users with accurate and insightful information about their dietary choices.
 
 ## Features
 
