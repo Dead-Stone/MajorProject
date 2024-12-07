@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_analysis_result"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="?attr/colorOutline"
+    android:checkable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/icon_food"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/circle_background"
+            android:padding="12dp"
+            android:src="@drawable/ic_food"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="?attr/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/text_food_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/text_calories"
+            app:layout_constraintStart_toEndOf="@id/icon_food"
+            app:layout_constraintTop_toTopOf="@id/icon_food"
+            tools:text="Grilled Chicken Salad"/>
+
+        <TextView
+            android:id="@+id/text_accuracy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="?android:textColorSecondary"
+            app:layout_constraintStart_toStartOf="@id/text_food_name"
+            app:layout_constraintTop_toBottomOf="@id/text_food_name"
+            tools:text="95% accuracy"/>
+
+        <TextView
+            android:id="@+id/text_calories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:textColor="?attr/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/text_food_name"
+            tools:text="320\nkcal"/>
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_group_nutrients"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/text_food_name"
+            app:layout_constraintTop_toBottomOf="@id/text_accuracy">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_protein"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceBody2"
+                app:chipMinHeight="32dp"
+                style="@style/Widget.MaterialComponents.Chip.Action"
+                tools:text="Protein: 25g"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_carbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceBody2"
+                app:chipMinHeight="32dp"
+                style="@style/Widget.MaterialComponents.Chip.Action"
+                tools:text="Carbs: 30g"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_fat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceBody2"
+                app:chipMinHeight="32dp"
+                style="@style/Widget.MaterialComponents.Chip.Action"
+                tools:text="Fat: 12g"/>
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

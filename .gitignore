@@ -160,3 +160,88 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log files
+*.log
+
+# Android Studio specific
+/.idea/
+/.idea/caches/
+/.idea/libraries/
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/misc.xml
+.idea/gradle.xml
+/.idea/vcs.xml
+/.idea/compiler.xml
+/.idea/copyright/
+/.idea/runConfigurations/
+/.idea/codeStyles/
+/.idea/androidStudioSettings.xml
+
+# Keystore files
+*.jks
+*.keystore
+
+# Gradle Wrapper
+/gradle/wrapper/gradle-wrapper.properties
+/gradle/wrapper/gradle-wrapper.jar
+
+# Binary files
+*.apk
+*.ap_
+*.so
+
+# Auto-generated files by Android Studio
+captures/
+output.json
+
+# Generated build folders
+build/
+app/build/
+*/build/
+
+# Temporary files
+*.iml
+*.hprof
+*.lock
+*.tmp
+*.temp
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Proguard and lint files
+proguard/
+lint/intermediates/
+/lint/generated/
+
+# Kotlin specific
+*.kotlin_metadata
+
+# IntelliJ IDEA-specific files
+.idea/
+
+# Node/React Native dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Firebase/Google Services files
+google-services.json
+firebase-settings.gradle
+.crashlytics/
+
+# Jetpack Compose related
+.idea/vcs.xml
+.idea/compose.xml
